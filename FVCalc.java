@@ -2,14 +2,16 @@
 public class FVCalc {
 	public static void main(String[] args){
 		// Recieves the amount of savings, the average return rate, and amount of time (in years) planned to save
-		double savings = Double.parseDouble(args[0]);
+		int savings = Integer.parseInt(args[0]);
 		double returnRate = Double.parseDouble(args[1]);
-		double years = Double.parseDouble(args[2]);
+		int years = Integer.parseInt(args[2]);
 
 		// Calculates compound interest and prints
-		double futureValue = savings * Math.pow(1 + returnRate , years);
+		double futureValue = savings * Math.pow(((returnRate / 100) + 1) , years);
+		int roundedValue = (int)futureValue;
+		//double futureValue = interest + savings;
 
-		System.err.println("If you invest $" + savings + " today at a " + returnRate + 
-							"% rate, you will have approx. $" + futureValue + " in " + years + " years.");
+		System.err.println("After " + years +  " years, $" + savings + " saved at " + returnRate + 
+							"% will yield $" + roundedValue);
 	}
 }
