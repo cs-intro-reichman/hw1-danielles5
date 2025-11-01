@@ -11,7 +11,7 @@ public class FVCalc {
 		int roundedValue = (int)futureValue;
 		//double futureValue = interest + savings;
 
-		System.err.println("After " + years +  " years, $" + savings + " saved at " + returnRate + 
+		System.err.println("After " + years +  " years, a $" + savings + " saved at " + returnRate + 
 							"% will yield $" + roundedValue);
 	}
 }
