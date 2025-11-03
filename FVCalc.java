@@ -9,9 +9,8 @@ public class FVCalc {
 		// Calculates compound interest and prints
 		double futureValue = savings * Math.pow(((returnRate / 100) + 1) , years);
 		int roundedValue = (int)futureValue;
-		//double futureValue = interest + savings;
 
-		System.err.println("After " + years +  " years, a $" + savings + " saved at " + returnRate + 
+		System.out.println("After " + years +  " years, a $" + savings + " saved at " + returnRate + 
 							"% will yield $" + roundedValue);
 	}
 }

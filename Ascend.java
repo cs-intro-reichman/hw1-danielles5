@@ -39,7 +39,7 @@ public class Ascend {
 
 		}
 
-		System.err.println(randomOne + " " + randomTwo + " " + randomThree);
+		System.out.println(randomOne + " " + randomTwo + " " + randomThree);
 
 	}
 }
